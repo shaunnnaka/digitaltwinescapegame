@@ -1,0 +1,41 @@
+<html>
+
+  <head>
+
+    <meta charset="UTF-8">
+
+    <title>デジタルツイン脱出ゲーム</title>
+
+  </head>
+
+  <body>
+
+    <h3>監視カメラ</h3>
+
+    <img id="img" style="width: 100%;"/>
+    <br>
+
+    <script type="text/javascript">
+      function Base64ToImage(base64img, callback) {
+        var img = new Image();
+        img.onload = function() {
+          callback(img);
+        };
+        img.src = base64img;
+      }
+      const con = new WebSocket('ws://localhost:8080');
+      con.onmessage = (m) => {
+        console.log(m.data);
+        Base64ToImage(m.data, function(img) {
+          // <img>要素にすることで幅・高さがわかります
+          //alert("w=" + img.width + " h=" + img.height);
+          // <img>要素としてDOMに追加
+          document.getElementById('img').src = img.src;
+        });
+      };
+      
+    </script>
+
+  </body>
+
+</html>
