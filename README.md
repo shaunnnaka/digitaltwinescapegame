@@ -1,7 +1,6 @@
 # digital twin escape game
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/54Sj24iZxS0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-
+[!['デジタルツイン脱出ゲーム']('https://img.youtube.com/vi/54Sj24iZxS0/0.jpg')]('https://www.youtube.com/watch?v=54Sj24iZxS0')
 
 ## 概要
     デジタルツインな謎解き脱出ゲームは，従来型の脱出ゲームと，会場の ３D  モデル内で行う VR 脱出ゲームを組み合わせた新しいタイプの脱出ゲームである。
